@@ -1,0 +1,290 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{color: #2C2D35; text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@import "..//scss/base/vars";
+
+
+
+
+// ------------ fonts ------------
+
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Raleway-Medium.ttf'), local('Raleway-Medium.ttf'),
+		url('../fonts/Raleway-Medium.ttf') format('truetype'),
+		url('../fonts/AnyConv.com__Raleway-Medium.eot') format('eot');
+}
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Raleway-Bold.ttf'), local('Raleway-Bold.ttf'),
+		url('../fonts/Raleway-Bold.ttf') format('truetype'),
+		url('../fonts/AnyConv.com__Raleway-Bold.eot') format('eot');
+}
+//------------
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 18px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+header {
+	background-color: var(--bg-h-f);
+}
+
+main {
+	background-color: var(--bg-base);
+}
+
+footer {
+	background-color: var(--bg-h-f);
+}
+
+
+
+// ------------ hover ------------
+
+.list__link .list__icon-cart:hover {
+	stroke: var(--accent-text);
+}
+
+.list__link:hover {
+	color: var(--accent-text);
+}
+
+// ------------ focus ------------
+
+.list__link .list__icon-cart:focus {
+	stroke: var(--accent-text);
+}
+
+.list__link:focus {
+	color: var(--accent-text);
+	background-color: var(--light-green);
+}
+
+// ------------ active ------------
+
+.list__link .list__icon-cart:active {
+	stroke: var(--dark-green);
+}
+
+.list__link:active {
+	color: var(--dark-green);
+}
+
+
+// ------------ header ------------
+.header {	
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 32px 0;
+	}
+}
+
+.nav {
+
+	&__logo {
+		width: 143px;
+		cursor: pointer;
+		& img {
+			width: 100%;
+		}
+	}
+
+	&__list {
+		max-width: 472px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.list {
+
+	&__item {
+		font-size: 18px;
+		font-weight: 500;
+
+		& a {
+			color: var(--title);
+			padding: 5px;
+		}
+	}
+
+	& .link-cart {
+		color: transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__summ-prod {
+		display: none;
+	}
+
+	&__icon-cart {
+		width: 24px;
+		height: 24px;
+		fill: currentColor;
+		stroke: #2C2D35;
+	}
+}
+
+
+
+// ------------ main ------------
+// .main {
+
+// 	&__banner {}
+
+// 	&__catalog {}
+
+// 	&__promo {}
+
+// 	&__about-us {}
+// }
+
+// .banner {
+
+// 	&__block {}
+
+// 	&__image {}
+
+// 	&__content {}
+// }
+
+// .catalog {
+
+// 	&__block {}
+
+// 	&__reproduct {}
+
+// 	&__h2 {}
+
+// 	&__filters {}
+
+// 	&__filter {}
+
+// 	&__cards {}
+
+// 	&__card {}
+// }
+
+// .ttl2 {}
+
+// .card {
+
+// 	&__item {}
+
+// 	&__img {}
+
+// 	&__painter {}
+
+// 	&__title {}
+
+// 	&__description {}
+
+// 	&__price {}
+
+// 	&__button {}
+// }
+
+// .promo {
+
+// 	&__content {}
+
+// 	&__title {}
+
+// 	&__icon {}
+
+// 	&__h2 {}
+
+// 	&__text {}
+
+// 	&__button {}
+// }
+
+// .about-us {
+
+// 	&__block {}
+
+// 	&__img {}
+
+// 	&__content {}
+
+// 	&__h2 {}
+
+// 	&__text {}
+
+// 	&__photos {}
+
+// 	&__photo {}
+// }
+
+
+// ------------ footer ------------
+// .footer {
+
+// 	&__content {}
+
+// 	&__top {}
+
+// 	&__logo {}
+
+// 	&__phone {}
+
+// 	&__text {}
+
+// 	&__middle {}
+
+// 	&__menu {}
+
+// 	&__end {}
+// }
+
+
+
+// ------------ media ------------
